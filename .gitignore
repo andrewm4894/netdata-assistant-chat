@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+.pytest_cache/
+.coverage
+.vscode/
+.idea/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+*.egg
+
+.env
+
+venv
+
+secrets.toml

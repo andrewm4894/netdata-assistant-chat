@@ -3,3 +3,4 @@ streamlit-feedback
 openai
 llama-index
 nltk
+python-dotenv
