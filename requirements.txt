@@ -4,3 +4,5 @@ openai
 llama-index
 nltk
 python-dotenv
+pinecone-client
+tqdm
