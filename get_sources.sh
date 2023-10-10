@@ -9,4 +9,6 @@ git clone https://github.com/netdata/blog.git
 cd ../data/
 cp -rf ../tmp/learn/docs/* ./docs/
 cp -rf ../tmp/blog/blog/* ./blog/
+# clean file names
+find . -type f -name "* *" -exec bash -c 'mv "$0" "${0// /_}"' {} \;
 
