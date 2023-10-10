@@ -44,7 +44,7 @@ vector_store = PineconeVectorStore(pinecone_index=pinecone_index)
 
 # load documents
 documents = SimpleDirectoryReader(
-    input_dir="./data_v4/",
+    input_dir="./data/",
     recursive=True,
     file_metadata=lambda filename: {"file_name": filename}
 ).load_data()
