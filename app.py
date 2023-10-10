@@ -85,7 +85,8 @@ if st.session_state.messages[-1]["role"] != "assistant":
             url = None
 
             if "data_v4" in file_name:
-                with open(file_name, "r", encoding="utf8") as file:
+                #with open(file_name, "r", encoding="utf8") as file:
+                with open(file_name, "r") as file:
                     content = file.read()
                     for line in content.splitlines():
                         # print(line)
