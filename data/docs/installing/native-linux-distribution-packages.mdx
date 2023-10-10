@@ -5,6 +5,7 @@ learn_status: "Published"
 learn_rel_path: "Installing"
 description: "Instructions for how to install Netdata using native DEB or RPM packages."
 sidebar_position: "204000"
+learn_link: "https://learn.netdata.cloud/docs/installing/native-linux-distribution-packages"
 ---
 
 
@@ -19,6 +20,18 @@ These packages will be used by default when attempting to install on a supported
 When using the kickstart script, you can force usage of native DEB or RPM packages by passing the option
 `--native-only` when invoking the script. This will cause it to only attempt to use native packages for the install,
 and fail if it cannot do so.
+
+
+
+> ### Note
+> 
+> In July 2022, we switched hosting of our native packages from Package Cloud to self-hosted repositories.
+> We still maintain the Package cloud repositories, but they are not guaranteed to work and may be removed 
+> without prior warning. 
+>
+> When selecting a repository configuration package, note that the version 2 packages provide configuration for
+> our self-hosted repositories, and then version 1 packages provide configuration for Package Cloud.
+
 
 ## Manual setup of RPM packages.
 

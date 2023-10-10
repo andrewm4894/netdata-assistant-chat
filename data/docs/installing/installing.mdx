@@ -4,7 +4,9 @@ sidebar_label: "Installing"
 learn_status: "Published"
 learn_rel_path: "Installing"
 sidebar_position: "200000"
+learn_link: "https://learn.netdata.cloud/docs/installing"
 ---
+
 import { OneLineInstallWget, OneLineInstallCurl } from '@site/src/components/OneLineInstall/'
 import { InstallRegexLink, InstallBoxRegexLink } from '@site/src/components/InstallRegexLink/'
 import Tabs from '@theme/Tabs';
@@ -55,7 +57,7 @@ metrics](/docs/configuring/optimizing-metrics-database/change-how-long-netdata-s
 
 If Netdata didn't autodetect all the hardware, containers, services, or applications running on your node, you should
 learn more about [how data collectors work](/docs/data-collection). If there's a [supported
-collector](/docs/data-collection/monitor-anything) for metrics you need, [configure the collector](/docs/data-collection/collectors-configuration)
+collector](/docs/data-collection/monitor-anything) for metrics you need, [configure the collector](/docs/configuring/collectors-configuration)
 or read about its requirements to configure your endpoint to publish metrics in the correct format and endpoint.
 
 #### Alerts & notifications
@@ -208,6 +210,27 @@ _actively_ contributing to Netdata's future.
 ### Troubleshooting and known issues
 
 We are tracking a few issues related to installation and packaging.
+
+#### Installs on hosts without IPv4 connectivity
+
+Our regular installation process requires access to a number of GitHub services that do not have IPv6 connectivity. As
+such, using the kickstart install script on such hosts generally does not work, and will typically fail with an
+error from cURL or wget about connection timeouts. You can check if your system is affected by this by attempting
+to connect to (or ping) `https://api.github.com/`. Failing to connect indicates that you are affected by this issue.
+
+There are three potential workarounds for this:
+
+1. You can configure your system with a proper IPv6 transition mechanism, such as NAT64. GitHub’s anachronisms
+   affect many projects other than just Netdata, and there are unfortunately a number of other services out there
+   that do not provide IPv6 connectivity, so taking this route is likely to save you time in the future as well.
+2. If you are using a system that we publish native packages for (see our [platform support
+   policy](/docs/installing/platform-support-policy) for more details),
+   you can manually set up our native package repositories as outlined in our [native package install
+   documentation](/docs/installing/native-linux-distribution-packages). Our official
+   package repositories do provide service over IPv6, so they work without issue on hosts without IPv4 connectivity.
+3. If neither of the above options work for you, you can still install using our [offline installation
+   instructions](/docs/installing/offline-systems), though
+   do note that the offline install source must be prepared from a system with IPv4 connectivity.
 
 #### Older distributions (Ubuntu 14.04, Debian 8, CentOS 6) and OpenSSL
 

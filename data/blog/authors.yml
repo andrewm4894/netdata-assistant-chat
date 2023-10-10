@@ -1,0 +1,82 @@
+andy:
+  name: Andrew Maguire
+  title: Analytics & ML Lead
+  url: https://www.linkedin.com/in/andrewm4894/
+  image_url: https://1.gravatar.com/avatar/4c7612cf17338f9267b624ef914fb3b2
+
+hugo:
+  name: Hugo Valente
+  title: Technical Product Manager
+  url: https://www.linkedin.com/in/hugo-valente/
+  image_url: https://secure.gravatar.com/avatar/cec3341913fc1623c220afac99b18acd?s=96&d=mm&r=g
+
+satya:
+  name: Satyadeep Ashwathnarayana
+  title: Technical Product Manager
+  url: https://www.linkedin.com/in/satyadeep-ashwathnarayana-88b1a111/
+  image_url: https://secure.gravatar.com/avatar/c51dada784db9e4f72e2f815952410e4?s=96&d=mm&r=g
+
+shyam:
+  name: Shyam Sreevalsan
+  title: Data & ML @ Netdata
+  url: https://www.linkedin.com/in/shyamvalsan/
+  image_url: https://secure.gravatar.com/avatar/09585276ae02e59a07e72f5f9b2925ab?s=96&d=mm&r=g
+
+alex:
+  name: Alex Malkov
+  title: VP of Engineering
+  url: https://www.linkedin.com/in/alexmalkov/
+  image_url: https://secure.gravatar.com/avatar/3382d256299ac700fe1c1699efdba767?s=96&d=mm&r=g
+
+chris:
+  name: Chris Akritidis
+  title: Chief Operations Officer
+  url: https://www.linkedin.com/in/christopher-akritidis/
+  image_url: https://avatars.githubusercontent.com/u/43294513?v=4
+
+costa:
+  name: Costa Tsaousis
+  title: Founder & Chief Executive Officer
+  url: https://www.linkedin.com/in/costatsaousis/
+  image_url: https://secure.gravatar.com/avatar/6ef45d91fe2ea27165128a2275ddf85f?s=96&d=mm&r=g
+
+tasos:
+  name: Tasos Katsoulas
+  title: Software Engineer
+  url: https://www.linkedin.com/in/tasos-katsoulas-a1ab99aa/
+  image_url: https://avatars.githubusercontent.com/u/12612986?v=4
+
+Blake:
+  name: Blake Etheridge
+  title: Community
+  url: https://www.linkedin.com/in/blakeethridge/
+  image_url: https://media.licdn.com/dms/image/D5603AQHGOWmPEipmvQ/profile-displayphoto-shrink_200_200/0/1664943583772?e=1691625600&v=beta&t=9qLsAWTQrl_qaZWt_QzdjOWet8SRkYEIPn-jc4vs_co
+
+Jen:
+  name: Jennifer Briston
+  title: Marketing
+  url: https://www.linkedin.com/in/jennifer-briston/
+  image_url: https://avatars.githubusercontent.com/u/55591909?v=4
+
+team:
+  name: Netdata Team
+  image_url: /img/logo600x600.png
+  url: https://netdata.cloud/
+
+joel:
+  name: Joel Hans
+  title: Editorial Director, Educational and Technical Resources
+  image_url: https://avatars.githubusercontent.com/u/1153921?v=4
+  url: https://www.linkedin.com/in/joel-hans/
+
+odysseas:
+  name: Odysseas Lamtzidis
+  title: Developer Relations Lead
+  image_url: https://avatars.githubusercontent.com/u/13405632?v=4
+  url: https://www.linkedin.com/in/odysseaslamtzidis/
+
+ferroin:
+  name: Austin S. Hemmelgarn
+  title: Senior Agent SRE
+  image_url: https://avatars.githubusercontent.com/u/905151?v=4
+  url: https://www.linkedin.com/in/austin-hemmelgarn-001699b0/

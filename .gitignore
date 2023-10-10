@@ -17,3 +17,5 @@ build/
 venv
 
 secrets.toml
+
+tmp

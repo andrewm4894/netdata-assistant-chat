@@ -5,6 +5,7 @@ learn_status: "Published"
 learn_rel_path: "Installing"
 description: "The kickstart.sh script installs Netdata from source, including all dependencies required to connect to Netdata Cloud, with a single command."
 sidebar_position: "202000"
+learn_link: "https://learn.netdata.cloud/docs/installing/one-line-installer-for-all-linux-systems"
 ---
 
 
@@ -160,7 +161,7 @@ To use `md5sum` to verify the integrity of the `kickstart.sh` script you will do
 run the following:
 
 ```bash
-[ "18f839c20f5389c5f2b3c71025858082" = "$(curl -Ss https://my-netdata.io/kickstart.sh | md5sum | cut -d ' ' -f 1)" ] && echo "OK, VALID" || echo "FAILED, INVALID"
+[ "99a4e0510a0c782447e0c0f522b5cdcf" = "$(curl -Ss https://my-netdata.io/kickstart.sh | md5sum | cut -d ' ' -f 1)" ] && echo "OK, VALID" || echo "FAILED, INVALID"
 ```
 
 If the script is valid, this command will return `OK, VALID`.

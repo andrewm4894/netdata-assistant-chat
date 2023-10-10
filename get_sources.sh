@@ -1,10 +1,12 @@
 # Cron this script to run daily
 
-cd sources
-git clone git@github.com:netdata/learn.git
-git clone git@github.com:netdata/blog.git
+# clone repos
+cd tmp
+git clone https://github.com/netdata/learn.git
+git clone https://github.com/netdata/blog.git
 
+# copy to data folder
 cd ../data/
-cp -rf ../sources/learn/docs/* ./docs/
-cp -rf ../sources/blog/blog/* ./blog/
+cp -rf ../tmp/learn/docs/* ./docs/
+cp -rf ../tmp/blog/blog/* ./blog/
 
