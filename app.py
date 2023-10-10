@@ -81,24 +81,12 @@ if st.session_state.messages[-1]["role"] != "assistant":
     with st.chat_message("assistant"):
         with st.spinner("Thinking..."):
             response = query(prompt, query_engine)
-            file_name = response.source_nodes[0].node.metadata["file_name"]
-            url = None
-
-            if "data_v4" in file_name:
-                #with open(file_name, "r", encoding="utf8") as file:
-                with open(file_name, "r") as file:
-                    content = file.read()
-                    for line in content.splitlines():
-                        # print(line)
-                        if line.startswith("learn_link:"):
-                            url = line.split(" ")[1].strip()
-                            break
+            file_names = [response.source_nodes[i].node.metadata["file_name"] for i in range(len(response.source_nodes))]
 
             st.write(response.response)
+            if len(file_names) > 0:
+                st.write("Relevant Files: ", file_names)
 
-            # Check if url is not None before writing it
-            if url:
-                st.write("Read more: ", url)
             message = {"role": "assistant", "content": response.response}
             feedback = streamlit_feedback(feedback_type="thumbs", align="flex-start")
 
